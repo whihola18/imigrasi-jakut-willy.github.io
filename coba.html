@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Select Option Dynamic</title>
+
+</head>
+<body>
+    <label for="jurusan">Alasan BAP:</label>
+    <select id="jurusan" onchange="showOptions()">
+        <option value="">Pilih</option>
+        <option value="A">Hilang</option>
+        <option value="B">Rusak Karena Bencana</option>
+        <option value="C">Rusak Karena Kelalaian</option>
+        <option value="D">Perubahan / Perbedaan Data</option>
+    </select>
+
+    <div id="optionsA" style="display: none; margin-top: 10px;">
+        <label for="subJurusanA">Upload SK Kehilangan Polisi</label>
+        <input type="file" name="subJurusanA" id="subJurusanA" placeholder="Upload SK Kehilangan Polisi">
+    </div>
+
+    <div id="optionsB" style="display: none; margin-top: 10px;">
+        <label for="subJurusanB">Upload surat keterangan dari instansi terkait</label>
+        <input type="file" name="subJurusanB" id="subJurusanB" placeholder="Upload suket (bencana)">
+    </div>
+
+    <div id="optionsC" style="display: none; margin-top: 10px;">
+        <label for="subJurusanB">Upload Foto Kerusakan Paspor</label>
+        <input type="file" name="subJurusanC" id="subJurusanC" placeholder="Upload Foto Kerusakan Paspor">
+    </div>
+
+    <div id="optionsD" style="display: none; margin-top: 10px;">
+        <label for="subJurusanB">Upload pendukung dari pengadilan / yang berwenang</label>
+        <input type="file" name="subJurusanD" id="subJurusanD" placeholder="Upload Foto pendukung dari yang berwenang">
+    </div>
+
+    <script>
+        function showOptions() {
+            var selectedValue = document.getElementById("jurusan").value;
+            var optionsA = document.getElementById("optionsA");
+            var optionsB = document.getElementById("optionsB");
+            var optionsC = document.getElementById("optionsC");
+            var optionsD = document.getElementById("optionsD");
+    
+            if (selectedValue === "A") {
+                optionsA.style.display = "block";
+                optionsB.style.display = "none";
+                optionsC.style.display = "none";
+                optionsD.style.display = "none";
+            } else if (selectedValue === "B") {
+                optionsA.style.display = "none";
+                optionsB.style.display = "block";
+                optionsC.style.display = "none";
+                optionsD.style.display = "none";
+            } else if (selectedValue === "C") {
+                optionsA.style.display = "none";
+                optionsB.style.display = "none";
+                optionsC.style.display = "block";
+                optionsD.style.display = "none";
+            } else if (selectedValue === "D") {
+                optionsA.style.display = "none";
+                optionsB.style.display = "none";
+                optionsC.style.display = "none";
+                optionsD.style.display = "block";
+            } else {
+                optionsA.style.display = "none";
+                optionsB.style.display = "none";
+                optionsC.style.display = "none";
+                optionsD.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

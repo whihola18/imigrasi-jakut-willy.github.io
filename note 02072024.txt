@@ -1,0 +1,8 @@
+1. image hero (nunggu foto lambang imigrasi jakut) (DONE)
+2. untuk upload file tampilkan preview file action nya pke button / anchor
+3. navbar di halaman permohonan belum sama (DONE)
+4. di Permohonan: Action kalau sudah submit form. Tulis saja di layar "Menunggu verifikasi" Sama dibawahnya ada tulisan "anda dapat memilih jadwal untuk pelaksanaan BAP setelah pendaftaran anda diverifikasi. Periksa "Cek Permohonan" Pada bagian layanan secara berkala"
+5. carousel nunggu foto (DONE)
+6. font panduan kurang besar (DONE), foto sebalah kanan tunggu denisa
+7. semua font poppins / sans-serif
+8. carousel jadi full width foto nunggu denisa (DONE)

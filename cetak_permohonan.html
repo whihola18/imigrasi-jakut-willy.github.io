@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicons -->
+    <link href="assets/img/imigrasi.ico" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <title>Cetak dan Cek Permohonan</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="https://bappo.imijakut.id/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"
+        type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="https://bappo.imijakut.id/assets/css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="https://bappo.imijakut.id/assets/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+    <!-- CSS CUSTOM -->
+     <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+      body {
+          font-family: 'Poppins';
+      }
+    </style>
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div style="background-color: #ffffff;"><!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <header id="header" class="header d-flex align-items-center fixed-top">
+                    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+                
+                      <a href="index.html" class="logo d-flex align-items-center me-auto">
+                        <!-- Uncomment the line below if you also wish to use an image logo -->
+                        <img src="https://bappo.imijakut.id/assets/img/pengayoman.png" alt="">
+                        <!-- <img src="assets/img/logo_imigrasi_jakut.png" alt=""> -->
+                        <img src="https://bappo.imijakut.id/assets/img/Logo.png" alt="">
+                        <h3 class="sitename" style="color: white">Aplikasi BAPPO</h3>
+                      </a>
+                
+                      <nav id="navmenu" class="navmenu">
+                        <ul>
+                          <li><a href="index.html" >Beranda</a></li>
+                          <li class="dropdown"><a href="#" class="active"><span>Layanan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                            <ul>
+                              <li><a href="permohonan.html">Buat Permohonan</a></li>
+                              <li><a href="cetak_permohonan.html">Cek Permohonan</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#contact">Hubungi Kami</a></li>
+                          <li><a href="permohonan.html">Buat Permohonan</a></li>
+                        </ul>
+                        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                      </nav>
+                
+                      <!-- <a class="btn-getstarted" href="#about">Mulai Pendaftaran</a> -->
+                
+                    </div>
+                  </header>
+                <!-- End of Topbar -->
+
+                <div class="container-fluid">
+
+                    <div>
+                    </div>
+
+                    <!-- <div class="row"> -->
+                    <div class="col"></div>
+                    <!-- <div class="col-lg-10 col-sm-10"> -->
+                    <div class="">
+
+                        <!-- Card all supplier-->
+                        <div class="col-lg-12 " style="margin-top: 200px;">
+                            <div class="card shadow mb-4">
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">CARI</h6>
+                                </div>
+                                <div class="card-body">
+                                    <form action="" method="get">
+
+                                        <div class="form-group row">
+                                            <label for="nik" class="col-sm-2 col-form-label">NIK</label>
+                                            <div class="col-sm-10">
+                                                <input type="number" class="form-control" id="nik" name="nik">
+                                            </div>
+                                        </div>
+
+                                        <div class="text-md-right">
+                                            <button class="btn btn-primary" type="submit" id="save-btn">Cari</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card all supplier-->
+                        <div class="col-lg-12 mt-3">
+                            <div class="card shadow mb-4">
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">CEK PERMOHONAN</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>No.</th>
+                                                    <th>NIK</th>
+                                                    <th>Metode BAP</th>
+                                                    <th>Tgl Kedatangan</th>
+                                                    <th>Status</th>
+                                                    <th>Tgl Pengajuan</th>
+                                                    <th>Tgl Verifikasi</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col"></div>
+                    <!-- </div> -->
+
+                </div>
+            </div>
+             <a href="https://web.whatsapp.com/send/?phone=6281225208763&text&type=phone_number&app_absent=0" class="whatsapp-icon" target="_blank">
+                <img src="assets/img/icon_wa2.png" alt="WhatsApp">
+              </a>
+
+              <!-- Scroll Top -->
+              <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+                  class="bi bi-arrow-up-short"></i></a>
+            <!-- End of Main Content -->
+            <div class="mt-4" style="position: absolute; left: 50%; bottom: 10px;">
+                <div style="position: relative; left: -50%;">
+                    <div class="copyright text-center my-auto">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bootstrap core JavaScript-->
+            <script src="https://bappo.imijakut.id/assets/vendor/jquery/jquery.min.js"></script>
+            <script src="https://bappo.imijakut.id/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+            <!-- Core plugin JavaScript-->
+            <script src="https://bappo.imijakut.id/assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+            <!-- Custom scripts for all pages-->
+            <script src="https://bappo.imijakut.id/assets/js/sb-admin-2.min.js"></script>
+
+            <!-- Page level plugins -->
+            <script src="https://bappo.imijakut.id/assets/vendor/datatables/jquery.dataTables.min.js"></script>
+            <script src="https://bappo.imijakut.id/assets/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+            <!-- Page level custom scripts -->
+            <script src="https://bappo.imijakut.id/assets/js/demo/datatables-demo.js"></script>
+
+            <!-- untuk memunculkan nama file gambar -->
+            <script>
+                $('.custom-file-input').on('change', function () {
+                    let fileName = $(this).val().split('\\').pop();
+                    $(this).next('.custom-file-label').addClass("selected").html(fileName);
+                });
+            </script>
+
+            <script>
+                function isNumber(evt) {
+                    evt = (evt) ? evt : window.event;
+                    var charCode = (evt.which) ? evt.which : evt.keyCode;
+                    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                        return false;
+                    }
+                    return true;
+                }
+            </script>
+
+            <script>
+                $(document).ready(function () {
+                    $("#metode_bap").change(function () {
+                        var val = $(this).val();
+                        if (val == "Walk in") {
+                            $("#walkInModal").modal();
+                        } else if (val == "On the spot") {
+                            $("#onTheSpotModal").modal();
+                        } else if (val == "Zoom") {
+                            $("#zoomModal").modal();
+                        }
+                    });
+                });
+
+                var modalShown = false;
+
+                function showModal() {
+                    if (!modalShown) {
+                        $('#noPaspor').modal();
+                        modalShown = true;
+                    }
+                }
+
+                function showModal2() {
+                    $('#noPaspor').modal();
+                }
+
+                function goBack() {
+                    window.history.back();
+                }
+            </script>
+
+</body>
+
+</html>
